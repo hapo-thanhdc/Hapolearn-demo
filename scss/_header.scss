@@ -1,17 +1,17 @@
 .header {
+  @media (max-width: 416px) {
+  background-color: #FFFBFB;
+  }
+  .logo {
     @media (max-width: 416px) {
-        background-color: #FFFBFB;
+      width: 70%;
+      display: block;
+      text-align: center;
+      img {
+          width: 150px;
+      }
     }
-    .logo {
-        @media (max-width: 416px) {
-            width: 70%;
-            display: block;
-            text-align: center;
-            img {
-                width: 150px;
-            }
-        }
-    }
+  }
 }
 
 .menu-navbar {
@@ -23,44 +23,44 @@
 }
 
 .menu-item {
-    margin: 0 10px;
+  margin: 0 10px;
+  a {
+    font-weight: bold;
+    &.nav-link {
+        padding: 7px 20px !important;
+    }
+    &:hover {
+      background-color: #B2D235;
+      color: #FEFFFF !important;
+      border-radius: 17px;
+    }
+  }
+  &.active {
     a {
-        font-weight: bold;
-        &.nav-link {
-            padding: 7px 20px !important;
-        }
-        &:hover {
-            background-color: #B2D235;
-            color: #FEFFFF !important;
-            border-radius: 17px;
-        }
+      background-color: #B2D235;
+      color: #FEFFFF !important;
+      border-radius: 17px;
     }
-    &.active {
-        a {
-            background-color: #B2D235;
-            color: #FEFFFF !important;
-            border-radius: 17px;
-        }
-    }
+  }
 }
 
 .menu-item {
-    a {
-        &.nav-link {
-            @media (max-width: 416px) {
-                text-align: center;
-                font-weight: bold;
-                padding: 23px 0 !important;
-            }
-        }
+  a {
+    &.nav-link {
+      @media (max-width: 416px) {
+        text-align: center;
+        font-weight: bold;
+        padding: 23px 0 !important;
+      }
     }
-    &.active {
-        @media (max-width: 416px) {
-            a {
-                color: #B2D235 !important;
-                background-color: unset;
-            }
-        }
+  }
+  &.active {
+    @media (max-width: 416px) {
+      a {
+        color: #B2D235 !important;
+        background-color: unset;
+      }
     }
+  }
 }
 

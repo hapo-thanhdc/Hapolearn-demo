@@ -105,16 +105,16 @@ ul {
   }
 }
 .menu-navbar {
-    @media (max-width: 416px) {
-        background: #FFFBFB;
-        flex-flow: wrap;
-        justify-content: flex-start;
+  @media (max-width: 416px) {
+    background: #FFFBFB;
+    flex-flow: wrap;
+    justify-content: flex-start;
     }
 }
 @media (max-width: 768px) {
-    .mobile-container {
-        max-width: 280px;
-        padding: 0;
+  .mobile-container {
+    max-width: 280px;
+    padding: 0;
     }
 }
 
