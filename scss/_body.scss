@@ -35,26 +35,27 @@ ul {
         font-weight: normal;
         color: #11114E;
         margin-bottom: 0;
-        .banner-description {
-          margin-top: 10px;
-          p {
-            font-size: 20px;
-            color: #505353;
-            }
-          .banner-button {
-            margin-top: 26px;
-            button {
-              background: #B2D235;
-              box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-              border-radius: 35px;
-              padding: 13px 67px;
-              color: #FFFFFF;
-                }
-            }
-        }
-      }
     }
   }
+  .banner-description {
+    margin-top: 10px;
+    p {
+      font-size: 20px;
+      color: #505353;
+    }
+  }
+  .banner-button {
+    margin-top: 26px;
+    button {
+      background: #B2D235;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 35px;
+      padding: 13px 67px;
+      color: #FFFFFF;
+    }
+  }
+}
+     
 @media (max-width: 416px) {
   .mobile-container {
       max-width: 280px;
