@@ -8,6 +8,7 @@ body {
 }
 
 ul {
+
   li {
       list-style: none;
   }
@@ -25,10 +26,10 @@ ul {
 }
 
 .banner-content {
-    position: absolute;
-    left: 60px;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
   .banner-heading {
     h2 {
         font-size: 50px;
@@ -37,6 +38,7 @@ ul {
         margin-bottom: 0;
     }
   }
+
   .banner-description {
     margin-top: 10px;
     p {
@@ -46,6 +48,7 @@ ul {
   }
   .banner-button {
     margin-top: 26px;
+
     button {
       background: $bg-color;
       box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -58,8 +61,8 @@ ul {
      
 @media (max-width: 416px) {
   .mobile-container {
-      max-width: 280px;
-      padding: 0;
+    max-width: 280px;
+    padding: 0;
   }
 }
 
