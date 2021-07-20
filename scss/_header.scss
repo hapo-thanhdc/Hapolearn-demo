@@ -43,7 +43,6 @@
   }
 
   &.active {
-
     a {
       background-color: $bg-color;
       color: $menu_item-white !important;
@@ -53,9 +52,7 @@
 }
 
 .menu-item {
-
   a {
-
     &.nav-link {
       @media (max-width: 416px) {
         text-align: center;

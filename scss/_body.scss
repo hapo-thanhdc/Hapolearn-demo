@@ -8,9 +8,8 @@ body {
 }
 
 ul {
-
   li {
-      list-style: none;
+    list-style: none;
   }
   margin: 0;
   padding: 0;
@@ -32,7 +31,6 @@ ul {
   transform: translateY(-50%);
 
   .banner-heading {
-
     p {
       font-size: 50px;
       font-weight: normal;
@@ -68,7 +66,6 @@ ul {
 }
      
 @media (max-width: 416px) {
-
   .mobile-container {
     max-width: 280px;
     padding: 0;
@@ -79,16 +76,16 @@ ul {
   @media (max-width: 416px) {
     position: static;
     transform: none;
-    height: 350px
+    height: 350pxgit 
   }
 
   .banner-heading {
-
     p {
       @media (max-width: 416px) {
           font-size: 25px;
       }
     }
+
     @media (max-width: 416px) {
       margin-top: 10px;
     }
@@ -115,7 +112,6 @@ ul {
   }
 
   .banner-heading {
-
     h2 {
       @media (max-width: 768px) {
         font-size: 30px;
