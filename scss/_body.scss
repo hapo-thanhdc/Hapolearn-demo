@@ -1,0 +1,142 @@
+img {
+  width: 100%;
+}
+
+body {
+  font-size: 14px;
+  color: $txt-color;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+  margin: 0;
+  padding: 0;
+}
+
+.fw-bold {
+  font-weight: bold !important;
+}
+
+.banner-wrapper {
+  position: relative;
+  background: $baner-linear;
+}
+
+.banner-content {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .banner-heading {
+    .heading {
+      font-size: 50px;
+      font-weight: normal;
+      color: $txt-bg-color;
+      margin-bottom: 0;
+      line-height: 61px;
+      letter-spacing: -0.05em;
+      left: 59px;
+      top: 354px;
+    }
+  }
+
+  .banner-description {
+    margin-top: 10px;
+
+    p {
+      font-size: 20px;
+      color: $txt-color;
+    }
+  }
+
+  .banner-button {
+    margin-top: 26px;
+
+    button {
+      background: $bg-color;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 35px;
+      padding: 13px 67px;
+      color: $btn-white;
+    }
+  }
+}
+     
+@media (max-width: 416px) {
+  .mobile-container {
+    max-width: 280px;
+    padding: 0;
+  }
+}
+
+.banner-content {
+  @media (max-width: 416px) {
+    position: static;
+    transform: none;
+    height: 350px; 
+  }
+
+  .banner-heading {
+    p {
+      @media (max-width: 416px) {
+        font-size: 25px;
+      }
+    }
+
+    @media (max-width: 416px) {
+      margin-top: 10px;
+    }
+  }
+
+  .banner-description {
+    @media (max-width: 416px) {
+      margin-top: 16px;
+      }
+    }
+}
+
+.menu-navbar {
+  @media (max-width: 768px) {
+    background: $menu-white;
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+}
+
+.banner-content {
+  @media (max-width: 768px) {
+    left: 26px;
+  }
+
+  .banner-heading {
+    .heading {
+      @media (max-width: 768px) {
+        font-size: 25px;
+        line-height: 31px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.05em;
+    }
+  }
+}
+
+.menu-navbar {
+  @media (max-width: 416px) {
+    background: $menu-white;
+    flex-flow: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-container {
+    padding: 0;
+    }
+}
