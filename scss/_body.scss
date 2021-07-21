@@ -57,7 +57,7 @@ ul {
 
     button {
       background: $bg-color;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: $box-shadow;
       border-radius: 35px;
       padding: 13px 67px;
       color: $btn-white;
