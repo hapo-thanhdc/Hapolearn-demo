@@ -10,19 +10,19 @@
       text-align: center;
 
       img {
-          width: 150px;
+        width: 150px;
       }
     }
   }
 }
 
 .menu-navbar {
-    padding-left: 0;
-    padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 
-    button {
-        border: 0;
-    }
+  button {
+    border: 0;
+  }
 }
 
 .menu-item {
@@ -32,7 +32,7 @@
     font-weight: bold;
 
     &.nav-link {
-        padding: 7px 20px !important;
+      padding: 7px 20px !important;
     }
 
     &:hover {
