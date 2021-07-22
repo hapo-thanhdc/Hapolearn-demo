@@ -4,6 +4,9 @@
   }
 
   .logo {
+    img {
+      width: 340px;
+    }
     @media (max-width: 416px) {
       width: 70%;
       display: block;
