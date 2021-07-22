@@ -20,6 +20,8 @@ ul {
 }
 
 .banner-wrapper {
+  // height: 650px;
+  // background-image: url(../image/hapo_learn_banner_logo.png);
   position: relative;
   background: $baner-linear;
 }
@@ -138,5 +140,153 @@ ul {
 @media (max-width: 768px) {
   .mobile-container {
     padding: 0;
+  }
+}
+
+.bg-html {
+  background-color: $bg-html;
+}
+
+.bg-laravel {
+  background-color: $bg-laravel;
+}
+
+.bg-php {
+  background-color: $bg-php;
+}
+
+.bg-css {
+  background-color: $bg-css;
+}
+
+.bg-ruby {
+  background-color: $bg-ruby;
+}
+
+.bg-java {
+  background-color: $bg-java;
+}
+
+.list-course {
+  margin: 40px 0;
+
+  .item {
+    background: $background-white;
+    box-shadow: 0px 0px 10px $box-shadow;
+    border-radius: 15px;
+    overflow: hidden;
+
+    .image-wrapper {
+      position: relative;
+      height: 200px;
+    }
+
+    .image {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .content {
+      text-align: center;
+      padding: 40px 25px;
+    }
+
+    .heading {
+      color: $bg-color;
+      font-size: 30px;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    a {
+      background: $bg-color;
+      box-shadow: $box-shadow;
+      border-radius: 35px;
+      padding: 13px 67px;
+      color: $btn-white;
+      margin-top: 24px;
+    }
+  }
+}
+
+.section-heading {
+  text-align: center;
+
+  h2 {
+    display: inline-block;
+    font-size: 80px;
+    color: $txt-bg-color;
+    position: relative;
+    padding-bottom: 30px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: $bg-color;
+      bottom: 0;
+      border-radius: 30px;
+    }
+  }
+}
+
+.view-all-courses {
+  text-align: center;
+  margin-top: 50px;
+
+  a {
+    color: $bg-color;
+    font-size: 40px;
+    text-decoration: none;
+  }
+
+  img{
+    width: 47.09px;
+    height: 26.08px;
+    left: 875px;
+    top: 2074px;
+  }
+}
+
+@media (max-width: 468px){
+  .list-course{
+    margin: -101px 11px;
+  }
+
+  .item {
+    margin-bottom: 30px;
+  }
+
+  .section-heading {
+    h2{
+      font-size: 40px;
+      line-height: 49px;
+      margin-bottom: 143px;
+      margin-top: 123px;
+      font-weight: bold;
+      line-height: 49px;
+    }
+  }
+
+  .view-all-courses {
+    a {
+      font-weight: bold;
+      font-size: 22px !important;
+      line-height: 27px;
+      letter-spacing: -0.02em;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+
+  .heading {
+    font-size: 20px !important;
+    line-height: 25px;
   }
 }
