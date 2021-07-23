@@ -260,13 +260,14 @@ ul {
   }
 
   .section-heading {
-    h2 {
+    p {
       font-size: 40px;
       line-height: 49px;
       margin-bottom: 143px;
       margin-top: 123px;
       font-weight: bold;
       line-height: 49px;
+
     }
   }
 
@@ -287,4 +288,9 @@ ul {
     font-size: 20px !important;
     line-height: 25px;
   }
+}
+
+.why-hapolearn {
+  position: relative;
+  background-image: url(../image/background_section4.png);
 }
