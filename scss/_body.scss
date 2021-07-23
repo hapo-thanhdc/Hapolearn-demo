@@ -20,8 +20,6 @@ ul {
 }
 
 .banner-wrapper {
-  // height: 650px;
-  // background-image: url(../image/hapo_learn_banner_logo.png);
   position: relative;
   background: $baner-linear;
 }
@@ -214,7 +212,7 @@ ul {
 .section-heading {
   text-align: center;
 
-  h2 {
+  p {
     display: inline-block;
     font-size: 80px;
     color: $txt-bg-color;
