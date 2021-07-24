@@ -212,12 +212,12 @@ ul {
 .section-heading {
   text-align: center;
 
-  p {
+  .heading {
     display: inline-block;
     font-size: 80px;
     color: $txt-bg-color;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 
     &::after {
       content: '';
@@ -229,6 +229,12 @@ ul {
       bottom: 0;
       border-radius: 30px;
     }
+  }
+
+  .description {
+    font-size: 25px;
+    margin: 0 auto;
+    width: 705px;
   }
 }
 
@@ -251,24 +257,12 @@ ul {
 }
 
 @media (max-width: 468px) {
-  .list-course {
-    margin: -101px 11px;
+  .feature-course {
+    margin-top: -101px;
   }
 
   .item {
     margin-bottom: 30px;
-  }
-
-  .section-heading {
-    p {
-      font-size: 40px;
-      line-height: 49px;
-      margin-bottom: 143px;
-      margin-top: 123px;
-      font-weight: bold;
-      line-height: 49px;
-
-    }
   }
 
   .view-all-courses {
@@ -284,13 +278,228 @@ ul {
     }
   }
 
-  .heading {
-    font-size: 20px !important;
-    line-height: 25px;
+  .section-heading {
+    .heading {
+      font-size: 20px ;
+      line-height: 25px;
+    }
+    
+  }
+}
+
+.why-hapolearn {
+  background-image:url(../image/background_section4.png);
+  background-size: cover;
+}
+
+.reason-list {
+  color: $background-white;
+
+  li {
+    margin-bottom: 25px;
   }
 }
 
 .why-hapolearn {
   position: relative;
-  background-image: url(../image/background_section4.png);
+
+   .heading {
+    color: $background-white;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 86px;
+    letter-spacing: -0.02em;
+  }
+
+  .image-laptop {
+    position: absolute;
+    top: -250px;
+  }
+}
+
+.why-hapolearn-wrapper {
+  padding: 98px 0;
+}
+
+.reason-content {
+  padding-left: 103px;
+  margin-top: 250px;
+
+  ul{
+    padding-left: 50px;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
+
+.image-laptop {
+  width: 478.32px;
+}
+
+.image-laptop-tabet {
+  position: absolute;
+  top: 100px;
+  right: 0;
+
+  img {
+    width: 792px; 
+  }
+}
+
+.un-position {
+  position: static;
+}
+
+@media (max-width: 1024px) {
+  .why-hapolearn {
+    top: 80px;
+
+    .heading {
+      position: absolute;
+      font-size: 50px;
+      line-height: 61px;
+      top: 8.81%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .image-laptop {
+      width: 277px;
+      top: -150px;
+    }
+  }
+
+  .list-course {
+    .description {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+
+    .item {
+      .image-wrapper  {
+        height: 130px;
+      }
+      .heading {
+        font-size: 20px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+
+      .content {
+        padding-top: 9px;
+        padding-bottom: 27px;
+      }
+
+      a {
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .image-laptop-tabet {
+    position: static;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .reason-content {
+    padding-left: 0;
+    margin-top: 100px;
+
+    ul {
+      padding-left: 20px;
+    }
+  }
+
+  .col-mobile {
+    position: static;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .why-hapolearn-wrapper {
+    position: relative;
+  }
+
+  .reason-list {
+    margin-top: 93px;
+  }
+  .reason-content {
+    padding-left: 103px;
+
+    ul {
+      padding-left: 50px;
+    }
+  }
+
+  .why-hapolearn {
+    top: 80px;
+
+    .heading {
+      right: 9.01%;
+      left: unset;
+      transform: unset;
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .why-hapolearn-wrapper {
+    position: relative;
+  }
+
+  .why-hapolearn{
+    .image-laptop {
+      width: 226px;
+      top: -120px;
+    }
+
+    .heading {
+      position: absolute;
+      width: 226px;
+      right: 0;
+      top: 50px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    .col-mobile {
+      position: unset;
+    }
+  }
+
+  .reason-content {
+    padding-left: 0;
+    margin-top: 120px;
+
+    ul {
+      padding-left: 0;
+      font-size: 13px;
+      line-height: 17px;
+    }
+  }
+
+  .un-position {
+    position: relative;
+  }
+
+  .image-laptop-tabet {
+    position: unset;
+    
+    img {
+      width: 100%;
+    }
+  }
 }
