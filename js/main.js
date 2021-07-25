@@ -27,8 +27,6 @@ $(document).ready(function() {
             var socialLink = $(item).parents('.social-link');
             socialLink.find('li .item').removeClass('active');
             $(item).addClass('active');
-        }
-        
+        }   
     })
-
 })
