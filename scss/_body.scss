@@ -616,6 +616,12 @@ ul {
   position: unset;
 }
 
+@media (max-width: 1024px) {
+  .feedback {
+    margin-top: 100px;
+  }
+}
+
 @media (max-width: 468px) {
   .feedback {
     margin-top: 100px;
@@ -632,6 +638,26 @@ ul {
         width: 325px;
         padding-bottom: 10px;
       }
+    }
+  }
+}
+
+.community {
+  background-image: url(../image/background_community.png);
+  text-align: center;
+  margin-top: 110px;
+  position: relative;
+
+  .banner-button {
+    margin-top: -86px;
+    padding-bottom: 124px;
+    
+    button {
+      background: $btn-white;
+      box-shadow: $box-shadow;
+      border-radius: 35px;
+      padding: 13px 67px;
+      color: $bg-color;
     }
   }
 }
