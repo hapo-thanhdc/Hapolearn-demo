@@ -639,3 +639,78 @@ ul {
     }
   }
 }
+
+.community {
+  background-image: url(../image/background_community.png);
+  text-align: center;
+  margin-top: 110px;
+  position: relative;
+
+  .banner-button {
+    margin-top: -86px;
+    padding-bottom: 124px;
+
+    button {
+      background: $btn-white;
+      box-shadow: $box-shadow;
+      border-radius: 35px;
+      padding: 13px 67px;
+      color: $bg-color;
+    }
+  }
+}
+
+.content-community {
+  p {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 74px;
+    padding-top: 124px;
+    color: $background-white;
+    margin: 124px 368px;
+  }
+}
+
+@media (max-width: 768px) {
+  .community {
+    background-size: cover;
+
+    .banner-button {
+      margin-top: -32px;
+      padding-bottom: 62.25px;
+    }
+  }
+
+  .content-community {
+    p {
+      font-size: 34px;
+      line-height: 43px;
+      margin: 52px 183px;
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .content-community {
+    p {
+      font-size: 23px;
+      margin: 34px 7.12px;
+      padding-top: 34px;
+      padding-bottom: 8px;
+    }
+  }
+
+  .community {
+    margin-top: 47.52px;
+
+    .banner-button {
+      margin-bottom: 32.67px;
+
+      button {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 7px 22px;
+      }
+    }
+  }
+}
