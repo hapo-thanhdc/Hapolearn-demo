@@ -64,7 +64,7 @@ ul {
     }
   }
 }
-     
+
 @media (max-width: 416px) {
   .mobile-container {
     max-width: 280px;
@@ -76,7 +76,7 @@ ul {
   @media (max-width: 416px) {
     position: static;
     transform: none;
-    height: 350px; 
+    height: 350px;
   }
 
   .banner-heading {
@@ -220,7 +220,7 @@ ul {
     padding-bottom: 10px;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       width: 100%;
@@ -280,15 +280,14 @@ ul {
 
   .section-heading {
     .heading {
-      font-size: 20px ;
+      font-size: 20px;
       line-height: 25px;
     }
-    
   }
 }
 
 .why-hapolearn {
-  background-image:url(../image/background_section4.png);
+  background-image: url(../image/background_section4.png);
   background-size: cover;
 }
 
@@ -303,7 +302,7 @@ ul {
 .why-hapolearn {
   position: relative;
 
-   .heading {
+  .heading {
     color: $background-white;
     font-weight: bold;
     font-size: 70px;
@@ -325,7 +324,7 @@ ul {
   padding-left: 103px;
   margin-top: 250px;
 
-  ul{
+  ul {
     padding-left: 50px;
   }
 }
@@ -340,7 +339,7 @@ ul {
   right: 0;
 
   img {
-    width: 792px; 
+    width: 792px;
   }
 }
 
@@ -377,7 +376,7 @@ ul {
     }
 
     .item {
-      .image-wrapper  {
+      .image-wrapper {
         height: 130px;
       }
       .heading {
@@ -423,7 +422,6 @@ ul {
   }
 }
 
-
 @media (max-width: 768px) {
   .why-hapolearn-wrapper {
     position: relative;
@@ -457,7 +455,7 @@ ul {
     position: relative;
   }
 
-  .why-hapolearn{
+  .why-hapolearn {
     .image-laptop {
       width: 226px;
       top: -120px;
@@ -521,14 +519,14 @@ ul {
     }
   }
 
-  .triangle{
+  .triangle {
     width: 100px;
     height: 38px;
     position: absolute;
     bottom: -38px;
     overflow: hidden;
 
-    &::after  {
+    &::after {
       content: "";
       position: absolute;
       width: 35px;
@@ -579,7 +577,7 @@ ul {
   .rate {
     i {
       color: $star;
-    }   
+    }
   }
 }
 
@@ -651,7 +649,7 @@ ul {
   .banner-button {
     margin-top: -86px;
     padding-bottom: 124px;
-    
+
     button {
       background: $btn-white;
       box-shadow: $box-shadow;
