@@ -751,7 +751,7 @@ ul {
     position: relative;
     padding-bottom: 10px;
 
-    &::after {
+    &:after {
       content: "";
       position: absolute;
       left: 0;
