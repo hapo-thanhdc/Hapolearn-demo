@@ -64,7 +64,7 @@ ul {
     }
   }
 }
-     
+
 @media (max-width: 416px) {
   .mobile-container {
     max-width: 280px;
@@ -76,7 +76,7 @@ ul {
   @media (max-width: 416px) {
     position: static;
     transform: none;
-    height: 350px; 
+    height: 350px;
   }
 
   .banner-heading {
@@ -220,7 +220,7 @@ ul {
     padding-bottom: 10px;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       width: 100%;
@@ -280,15 +280,14 @@ ul {
 
   .section-heading {
     .heading {
-      font-size: 20px ;
+      font-size: 20px;
       line-height: 25px;
     }
-    
   }
 }
 
 .why-hapolearn {
-  background-image:url(../image/background_section4.png);
+  background-image: url(../image/background_section4.png);
   background-size: cover;
 }
 
@@ -303,7 +302,7 @@ ul {
 .why-hapolearn {
   position: relative;
 
-   .heading {
+  .heading {
     color: $background-white;
     font-weight: bold;
     font-size: 70px;
@@ -325,7 +324,7 @@ ul {
   padding-left: 103px;
   margin-top: 250px;
 
-  ul{
+  ul {
     padding-left: 50px;
   }
 }
@@ -340,7 +339,7 @@ ul {
   right: 0;
 
   img {
-    width: 792px; 
+    width: 792px;
   }
 }
 
@@ -377,7 +376,7 @@ ul {
     }
 
     .item {
-      .image-wrapper  {
+      .image-wrapper {
         height: 130px;
       }
       .heading {
@@ -423,7 +422,6 @@ ul {
   }
 }
 
-
 @media (max-width: 768px) {
   .why-hapolearn-wrapper {
     position: relative;
@@ -432,7 +430,7 @@ ul {
   .reason-list {
     margin-top: 93px;
   }
-  
+
   .reason-content {
     padding-left: 103px;
 
@@ -457,7 +455,7 @@ ul {
     position: relative;
   }
 
-  .why-hapolearn{
+  .why-hapolearn {
     .image-laptop {
       width: 226px;
       top: -120px;
@@ -497,6 +495,147 @@ ul {
 
     img {
       width: 100%;
+    }
+  }
+}
+
+.comment-wrapper {
+  background: $btn-white;
+  border: 0.5px solid $boder;
+  border-radius: 10px;
+  padding: 25px 21px;
+  position: relative;
+  box-shadow: 0px 0px 8px $box-shadow;
+
+  .comment-content {
+    display: flex;
+    align-items: center;
+
+    .line {
+      background: $line;
+      width: 5px;
+      height: 108px;
+      margin-right: 19px;
+    }
+  }
+
+  .triangle {
+    width: 100px;
+    height: 38px;
+    position: absolute;
+    bottom: -38px;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      background: $background-white;
+      transform: rotate(45deg);
+      top: -25px;
+      left: 25px;
+      border: 0.5px solid $box-shadow;
+      box-shadow: -1px -1px 10px -2px $box-shadow-feed;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.customer-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 55px;
+
+  .image {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 1rem;
+  }
+
+  .detail {
+    p {
+      margin-bottom: 0;
+    }
+
+    .name {
+      color: $txt-bg-color;
+      font-size: 20px;
+    }
+
+    .position {
+      font-size: 16px;
+    }
+  }
+
+  .rate {
+    i {
+      color: $star;
+    }
+  }
+}
+
+.feed-slide {
+  .slick-slide {
+    margin: 0 10px;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 56px;
+    background: $background-white;
+    border: 0.5px solid $boder-feed;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $slick-row-color;
+
+    &.arrow-left {
+      left: -8px;
+    }
+
+    &.arrow-right {
+      right: -8px;
+    }
+  }
+}
+
+.un-position {
+  position: unset;
+}
+
+@media (max-width: 768px) {
+  .feedback {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 468px) {
+  .feedback {
+    margin-top: 100px;
+
+    .section-heading {
+      .heading {
+        font-size: 40px;
+        line-height: 49px;
+      }
+      .description {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        width: 325px;
+        padding-bottom: 10px;
+      }
     }
   }
 }
