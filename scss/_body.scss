@@ -526,7 +526,7 @@ ul {
     bottom: -38px;
     overflow: hidden;
 
-    &::after {
+    &:after {
       content: "";
       position: absolute;
       width: 35px;
