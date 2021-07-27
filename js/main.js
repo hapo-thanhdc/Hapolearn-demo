@@ -29,4 +29,11 @@ $(document).ready(function() {
         $(item).addClass('active');
     }
   })
+
+  $('.messenger-icon').click(function() {
+    $(this).parents('.messenger-wrapper').find('.messenger-body').toggleClass('active');
+  })
+  $('.messenger-close').click(function() {
+    $(this).parents('.messenger-body').removeClass('active');
+  })
 })
