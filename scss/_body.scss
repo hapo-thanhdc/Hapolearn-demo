@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "UTM";
+  src: url(../fonts/UTM\ BryantLG.ttf);
+}
+
 img {
   width: 100%;
 }
@@ -5,7 +10,8 @@ img {
 body {
   font-size: 14px;
   color: $txt-color;
-  font-family: Roboto;
+  font-family: "UTM";
+  font-weight: bold;
 }
 
 ul {
@@ -836,6 +842,7 @@ ul {
     align-items: center;
     justify-content: center;
     margin: 10px;
+
     .link {
       display: none;
     }
@@ -857,6 +864,7 @@ ul {
 .footer {
   margin-top: 136px;
 }
+
 .footer-content {
   background-color: $txt-color;
   padding: 65px 0;
