@@ -977,6 +977,7 @@ ul {
   .messenger-icon {
     float: right;
     cursor: pointer;
+    
     img {
       width: 60px;
     }
@@ -1006,6 +1007,7 @@ ul {
   p {
     margin-bottom: 0;
   }
+
   .name {
     font-size: 12px;
     margin-left: 10px;
@@ -1020,6 +1022,7 @@ ul {
   .messenger-login {
     text-align: center;
     margin-top: 23px;
+
     button {
       background: $button-mess;
       border-radius: 10px;
@@ -1028,6 +1031,7 @@ ul {
       font-size: 12px;
       padding: 10px 0;
     }
+
     p {
       margin-top: 6px;
       font-size: 12px;
