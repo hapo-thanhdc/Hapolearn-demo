@@ -1,6 +1,6 @@
 @font-face {
   font-family: "UTM";
-  src: url(../fonts/UTM\ BryantLG.ttf);
+  src: url(../fonts/UTM\ BryantLG_B.ttf);
 }
 
 img {
@@ -957,6 +957,104 @@ ul {
       width: 30px;
       height: 30px;
       margin-right: 0px;
+    }
+  }
+}
+
+.messenger-wrapper {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+
+  .messenger-body {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .messenger-icon {
+    float: right;
+    cursor: pointer;
+
+    img {
+      width: 60px;
+    }
+  }
+
+  .messenger-body {
+    background: $background-white;
+    box-shadow: 0px 0px 8px $box-shadow;
+    border-radius: 23px;
+    padding: 13px;
+    width: 360px;
+  }
+
+  .avatar {
+    width: 28px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+  }
+
+  .message {
+    width: 256px;
+    background: $mess-backgorund;
+    border-radius: 15px;
+    padding: 9px 33px 10px 15px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .name {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+  }
+
+  .messenger-detail {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .messenger-login {
+    text-align: center;
+    margin-top: 23px;
+
+    button {
+      background: $button-mess;
+      border-radius: 10px;
+      width: 276px;
+      color: $btn-white;
+      font-size: 12px;
+      padding: 10px 0;
+    }
+
+    p {
+      margin-top: 6px;
+      font-size: 12px;
+      color: $mess-text;
+    }
+
+    img {
+      width: 17px;
+    }
+  }
+
+  .messenger-close {
+    float: right;
+    background: $boder-feed;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      color: $mess-close;
     }
   }
 }
