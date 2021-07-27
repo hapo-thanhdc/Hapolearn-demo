@@ -977,7 +977,7 @@ ul {
   .messenger-icon {
     float: right;
     cursor: pointer;
-    
+
     img {
       width: 60px;
     }
@@ -1044,9 +1044,6 @@ ul {
   }
 
   .messenger-close {
-    a {
-      color: $mess-close;
-    }
     float: right;
     background: $boder-feed;
     border-radius: 100%;
@@ -1055,5 +1052,9 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    a {
+      color: $mess-close;
+    }
   }
 }
