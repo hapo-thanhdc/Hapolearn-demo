@@ -1,6 +1,6 @@
 @font-face {
   font-family: "UTM";
-  src: url(../fonts/UTM\ BryantLG_B.ttf);
+  src: url(../fonts/UTM\ BryantLG.ttf);
 }
 
 img {
@@ -51,6 +51,14 @@ ul {
     img {
       width: 48.39px;
     }
+
+    .content {
+      text-shadow: 1px 1px $txt-bg-color;
+      -webkit-text-stroke-width: 2px;
+      font-size: 50px;
+      line-height: 61px;
+      color: $txt-bg-color;
+    }
   }
 
   .banner-description {
@@ -72,10 +80,10 @@ ul {
       padding: 13px 67px;
       color: $btn-white;
       transition: all ease-in-out 0.4s;
+      font-weight: bold;
 
       &:hover {
-        color: $bg-color;
-        background: $btn-white;
+        color: $txt-bg-color;
       }
     }
   }
@@ -210,7 +218,6 @@ ul {
     .heading {
       color: $bg-color;
       font-size: 30px;
-      font-weight: normal;
       margin-bottom: 10px;
     }
 
@@ -221,6 +228,13 @@ ul {
       padding: 13px 67px;
       color: $btn-white;
       margin-top: 24px;
+      font-weight: bold;
+    }
+  }
+
+  a {
+    &:hover {
+      color: $txt-bg-color;
     }
   }
 }
@@ -234,6 +248,8 @@ ul {
     color: $txt-bg-color;
     position: relative;
     padding-bottom: 10px;
+    text-shadow: 1px 1px $txt-bg-color;
+    -webkit-text-stroke-width: 2px;
 
     &::after {
       content: "";
@@ -262,6 +278,8 @@ ul {
     color: $bg-color;
     font-size: 40px;
     text-decoration: none;
+    text-shadow: 1px 1px $bg-color;
+    -webkit-text-stroke-width: 2px;
   }
 
   img {
@@ -672,6 +690,13 @@ ul {
       border-radius: 35px;
       padding: 13px 67px;
       color: $bg-color;
+      font-weight: bold;
+    }
+  }
+
+  button {
+    &:hover {
+      color: $txt-bg-color;
     }
   }
 }
@@ -766,6 +791,8 @@ ul {
     color: $txt-bg-color;
     position: relative;
     padding-bottom: 10px;
+    text-shadow: 1px 1px $txt-bg-color;
+    -webkit-text-stroke-width: 2px;
 
     &:after {
       content: "";
@@ -1055,6 +1082,230 @@ ul {
 
     a {
       color: $mess-close;
+    }
+  }
+}
+
+.modal {
+  .close-modal-button {
+    width: 30px;
+    height: 30px;
+    top: -8px;
+    right: -8px;
+  }
+
+  .login-form {
+    padding-bottom: 45px;
+  }
+
+  .register-form {
+    padding-bottom: 45px;
+  }
+}
+
+.modal-content {
+  .close-modal-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    top: -18px;
+    right: -18px;
+    float: right;
+    background: $bg-color;
+    border-radius: 100%;
+    color: $background-white;
+  }
+
+  .modal-body {
+    position: relative;
+    padding: 0;
+
+    .nav-tabs {
+      justify-content: center;
+    }
+  }
+
+  .nav-tabs {
+    .nav-item {
+      width: 50%;
+    }
+  }
+  .nav-tabs {
+    a {
+      text-align: center;
+      color: $bg-color;
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: -0.02em;
+    }
+  }
+}
+
+.nav-item {
+  .show {
+    &.nav-link {
+      background-color: $bg-color;
+      color: $btn-white;
+    }
+  }
+}
+
+.nav-tabs {
+  .nav-link {
+    &.active {
+      background-color: $bg-color;
+      color: $background-white;
+    }
+  }
+}
+
+.form-group {
+  padding: 0 30px;
+
+  .form-group-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .form-control {
+    background-color: $form-control;
+    box-sizing: border-box;
+    border: 1px solid $border-control;
+  }
+}
+
+.form-check {
+  left: 20px;
+
+  a {
+    float: right;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    color: $bg-color;
+  }
+
+  .form-check-label {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: $txt-color;
+  }
+}
+
+.login-form {
+  .button-login {
+    display: flex;
+    justify-content: center;
+
+    button {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      border: 0.3px solid $background-white;
+      padding: 9px 68px;
+      box-shadow: $box-shadow-btn;
+      border-radius: 22px;
+      color: $background-white;
+      background-color: $bg-color;
+    }
+  }
+
+  .social-title {
+    padding: 31px 0;
+
+    .line {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid $mess-close;
+      line-height: 0.1em;
+    }
+
+    .social-network-login-title {
+      background: $background-white;
+      padding: 0 4px;
+      font-weight: bold;
+      font-size: 20px;
+      color: $txt-color;
+    }
+  }
+}
+
+.login-google {
+  margin: 30px 30px;
+  text-align: center;
+
+  a {
+    padding: 13px 131px;
+    background: $backgroud-google;
+    color: $background-white;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+  }
+}
+
+.login-facebook {
+  margin: 30px;
+  text-align: center;
+  margin-bottom: 45px;
+  padding-top: 15px;
+
+  a {
+    padding: 12px 126px;
+    background: $backgroud-facebook;
+    color: $background-white;
+    font-size: 20px;
+    line-height: 24.25px;
+    font-weight: bold;
+  }
+}
+
+.button-register {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 45px;
+
+  button {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    border: 0.3px solid $background-white;
+    padding: 9px 68px;
+    box-shadow: $box-shadow-btn;
+    border-radius: 22px;
+    color: $background-white;
+    background-color: $bg-color;
+  }
+}
+
+@media (max-width: 468px) {
+  .modal-content {
+    width: 80%;
+
+    .login-google {
+      a {
+        padding: 15px 90px;
+      }
+    }
+
+    .login-facebook {
+      a {
+        padding: 15px 85px;
+      }
     }
   }
 }
