@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "UTM";
+  src: url(../fonts/UTM\ BryantLG.ttf);
+}
+
 img {
   width: 100%;
 }
@@ -5,6 +10,8 @@ img {
 body {
   font-size: 14px;
   color: $txt-color;
+  font-family: "UTM";
+  font-weight: bold;
 }
 
 ul {
@@ -41,6 +48,9 @@ ul {
       left: 59px;
       top: 354px;
     }
+    img {
+      width: 48.39px;
+    }
   }
 
   .banner-description {
@@ -61,6 +71,12 @@ ul {
       border-radius: 35px;
       padding: 13px 67px;
       color: $btn-white;
+      transition: all ease-in-out 0.4s;
+
+      &:hover {
+        color: $bg-color;
+        background: $btn-white;
+      }
     }
   }
 }
@@ -641,7 +657,7 @@ ul {
 }
 
 .community {
-  background-image: url(../image/background_community.png);
+  background-image: url(../image/become-member.png);
   text-align: center;
   margin-top: 110px;
   position: relative;
@@ -800,6 +816,147 @@ ul {
     .heading {
       font-size: 40px;
       line-height: 49px;
+    }
+  }
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    background: $background-white;
+    color: $txt-color;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+    .link {
+      display: none;
+    }
+    &.active {
+      .link {
+        display: block !important;
+
+        a {
+          color: $background-white;
+        }
+      }
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+.footer {
+  margin-top: 136px;
+}
+
+.footer-content {
+  background-color: $txt-color;
+  padding: 65px 0;
+
+  .contact {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+
+    .text-home {
+      padding-top: 32px;
+    }
+
+    a {
+      display: block;
+      font-size: 20px;
+      line-height: 24.52px;
+      color: $background-white;
+      margin: 10px 0;
+    }
+  }
+
+  .social {
+    top: 65px;
+  }
+}
+
+.text-footer {
+  position: relative;
+
+  .logo-text {
+    color: $background-white;
+    padding-left: 80px;
+    font-size: 16px;
+    line-height: 24.52px;
+  }
+}
+
+.footer-end {
+  color: $background-white;
+  text-align: center;
+  background: $back-ground-end;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-footer {
+    .logo-text {
+      padding-left: 7px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .text-footer {
+    transform: translate(0px, 166px);
+
+    .logo-text {
+      font-size: 14px;
+      line-height: 17.17px;
+      padding-left: 5px;
+      padding-right: 97px;
+    }
+
+    .logo-footer {
+      width: 150px;
+    }
+  }
+
+  .contact-home {
+    .contact {
+      position: absolute;
+    }
+  }
+
+  .footer-content {
+    .contact {
+      transform: translate(66px, -134px);
+    }
+  }
+
+  .social-link {
+    transform: translate(105px, -111px);
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 0px;
     }
   }
 }
