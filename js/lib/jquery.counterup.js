@@ -1,4 +1,4 @@
-(function ($) {
+$(function() {
   $.fn.countTo = function (options) {
     options = $.extend({}, $.fn.countTo.defaults, options || {});
     var loops = Math.ceil(options.speed / options.refreshInterval),
@@ -40,4 +40,4 @@
     onUpdate: null,
     onComplete: null,
   };
-})(jQuery);
+});
