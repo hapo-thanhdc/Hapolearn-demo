@@ -28,7 +28,18 @@ ul {
 
 .banner-wrapper {
   position: relative;
+  height: 861px;
+}
+
+.back-ground {
   background: $baner-linear;
+  height: 161px;
+}
+
+.container {
+  .course {
+    margin-top: -153px;
+  }
 }
 
 .banner-content {
@@ -1133,7 +1144,7 @@ ul {
       width: 50%;
     }
   }
-  
+
   .nav-tabs {
     a {
       text-align: center;
